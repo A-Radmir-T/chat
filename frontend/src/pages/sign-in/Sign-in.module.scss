@@ -1,0 +1,52 @@
+.signIn {
+	max-width: 450px;
+	height: auto;
+	width: 100%;
+	margin: 100px auto;
+	background-color: var(--bg-body);
+	padding: 20px;
+	border-radius: 7px;
+	h2 {
+		text-align: center;
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+}
+
+.logo {
+	margin: 0 auto;
+	width: 60px;
+	height: auto;
+}
+
+.form {
+	text-align: center;
+	margin-bottom: 20px;
+
+	button {
+		width: 100%	;
+		font-size: 20px;
+		margin-top: 20px;
+		border-radius: 7px;
+		background-color: #1d99bc;
+		color: var(--color)
+	}
+}
+
+.message {
+	text-align: center;
+
+	a {
+		text-decoration: underline;
+		font-size: 16px;
+		letter-spacing: 1px;
+		color: #ccc;
+		&:hover {
+			color: var(--color);
+			text-decoration: underline;
+		}
+	}
+}
+.link {
+	text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+@import "../../assets/styles/variables";
+
+.friends {
+	@include component();
+}
+
+.links {
+	padding: 10px;
+	a {
+		padding: 5px 15px;
+		border-radius: 7px;
+		color: #ccc;
+		margin-right: 10px;
+	}
+
+	span {
+		margin-left: 10px;
+	}
+	.active {
+		background-color: var(--bg-button);
+		color: var(--color);
+	}
+}
+

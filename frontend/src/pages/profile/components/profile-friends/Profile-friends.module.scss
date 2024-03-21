@@ -1,0 +1,23 @@
+@import "../../../../assets/styles/variables";
+
+.friends {
+	@include component();
+	min-height: 150px;
+
+	width: 100%;
+}
+
+.friendList {
+	display: flex;
+	small {
+		color: #ccc;
+		font-size: 12px;
+	}
+}
+
+.friend {
+	margin: 0px 5px;
+	p {
+		text-align: center;
+	}
+}

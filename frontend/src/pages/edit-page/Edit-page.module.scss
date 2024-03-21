@@ -1,0 +1,23 @@
+@import "../../assets/styles/variables";
+.edit {
+	@include component();
+}
+
+.title {
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.form {
+	padding:10px 30px;
+	button {
+		width: 200px	;
+		display: block;
+		margin: 0 auto;
+		font-size: 20px;
+		border-radius: 7px;
+		background-color: #1d99bc;
+		color: var(--color)
+	}
+}

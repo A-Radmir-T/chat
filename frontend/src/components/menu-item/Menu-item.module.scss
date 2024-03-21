@@ -1,0 +1,21 @@
+.item {
+	margin-bottom: 5px;
+	border-radius: 7px;
+	padding: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	span {
+		font-size: 18px;
+		color: #1d99bc;
+		margin-right: 10px;
+
+	}
+	&:hover {
+		background-color: var(--bg-hover);
+	}
+	& .icon-bin {
+		color: var(--error-color);
+	}
+}

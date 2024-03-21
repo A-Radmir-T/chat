@@ -1,0 +1,58 @@
+@import "../../assets/styles/variables";
+
+.wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(17, 24, 42, 0.8);
+	z-index: 105;
+	padding: 20px 40px;
+}
+
+.photo {
+	margin: 0 auto;
+	position: relative;
+	@include component();
+	height: 100%;
+	max-width: 1000px;
+	text-align: center;
+	padding: 0 ;
+	img {
+		border-radius: 0;
+		max-width: 80%;
+	}
+}
+
+.close {
+	position: absolute;
+	right: 20px;
+	top: 30px;
+	span {
+		color: #ccc;
+		font-size: 18px;
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+.btn {
+	position: absolute;
+	top: 40%;
+	font-size: 40px;
+	cursor: pointer;
+	color: #ccc;
+	font-weight: 900;
+	&:hover {
+		color: #fff;
+	}
+}
+
+.btn_right {
+	right: 20px;
+}
+.btn_left {
+	left: 20px;
+}

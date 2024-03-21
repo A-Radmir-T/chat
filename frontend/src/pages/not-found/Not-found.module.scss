@@ -1,0 +1,23 @@
+.notFound {
+	max-width: 600px;
+	margin: 100px auto;
+	text-align: center;
+	font-weight: 700;
+	h2 {
+		font-size: 70px;
+
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+
+	a {
+		font-weight: 500;
+		color: var(--color-link) !important;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+.message {
+	max-width: 90%;
+	overflow-y: auto;
+	margin: 0 auto;
+}
+
+.messageAva {
+	margin-right: 10px;
+	position: absolute;
+}
+
+.userName {
+	cursor: pointer;
+	color: var(--color-link) !important;
+	padding-top: 10px;
+	margin-bottom: 5px;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.unRead {
+	background-color: var(--bg-global);
+}
+
+.messageBody {
+	width: 100%;
+	padding: 5px 0 5px 60px;
+	margin:0 auto;
+	a {
+		display: block;
+	}
+}
+
+.text {
+	display: flex;
+	max-width: 100%;
+	justify-content: space-between;
+	word-break: break-all;
+
+	p {
+		margin-left: 10px;
+		min-width: 100px;
+	}
+}
+
+.info {
+	font-size: 10px;
+	color: #ccc;
+}

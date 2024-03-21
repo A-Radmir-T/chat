@@ -1,0 +1,80 @@
+@import "../../../../assets/styles/variables";
+
+.photos {
+	@include component();
+	min-height: 150px;
+
+	width: 100%;
+}
+
+
+.items {
+	min-height: 50px;
+	display: flex;
+	margin-bottom: 20px;
+	p {
+		text-align: center;
+	}
+
+	.image + .image{
+		margin-left: 5px;
+	}
+}
+
+.image {
+	cursor: pointer;
+	max-width: 173px;
+	max-height: 173px;
+	position: relative;
+	&:hover {
+		span {
+			color: inherit;
+			transition: color 0.2s;
+		}
+	}
+	span {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		font-size: 18px;
+		color: transparent;
+		&:hover {
+			color: var(--error-color);
+		}
+
+	}
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	button {
+		width: 100%;
+		margin:	0 10px;
+		font-size: 16px;
+	}
+}
+
+.select_image {
+	width: 100%;
+	text-align: center;
+	input {
+		display: none;
+	}
+	label {
+		cursor: pointer;
+		border-radius: 7px;
+		background-color: var(--bg-button);
+		color: var(--color);
+		padding: 10px;
+		display: inline-block;
+		width: 100%;
+		&:hover {
+			background-color: var(--bg-hover);
+		}
+	}
+}

@@ -1,0 +1,36 @@
+@import "@/assets/styles/_variables.scss";
+.App {
+  text-align: center;
+}
+
+.ownerPageCover {
+	@include component(#ccc);
+	height: 250px;
+}
+
+.profileHeader {
+	@include component();
+	min-height: 100px;
+	position: relative;
+	top: -25px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.profileHeaderPhoto {
+	max-width: 150px;
+	width: 100%;
+	margin-left: 20px;
+}
+
+.profileHeaderAva {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	bottom: 20%;
+}
+
+
+
+
+

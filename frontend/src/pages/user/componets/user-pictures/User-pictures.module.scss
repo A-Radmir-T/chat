@@ -1,0 +1,49 @@
+@import "../../../../assets/styles/variables";
+
+.photos {
+	@include component();
+	min-height: 150px;
+
+	width: 100%;
+}
+
+
+.items {
+	min-height: 50px;
+	display: flex;
+	margin-bottom: 20px;
+	p {
+		text-align: center;
+	}
+
+	.image + .image{
+		margin-left: 5px;
+	}
+}
+
+.image {
+	max-width: 173px;
+	max-height: 173px;
+	position: relative;
+	&:hover {
+		span {
+			color: inherit;
+			transition: color 0.2s;
+		}
+	}
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	button {
+		width: 100%;
+		margin:	0 10px;
+		font-size: 16px;
+	}
+}
+

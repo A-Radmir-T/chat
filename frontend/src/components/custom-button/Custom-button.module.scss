@@ -1,0 +1,23 @@
+.button {
+	position: relative;
+	padding: 5px 15px;
+	border-radius: 7px;
+	overflow: hidden;
+	background-color: var(--bg-button);
+	color: var(--color);
+	&:hover {
+		background: var(--bg-hover);
+	}
+	p {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: inherit;
+		background-color: var(--bg-button);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+}

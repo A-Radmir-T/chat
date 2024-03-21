@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;500;600;700;900&display=swap');
+@import "assets/styles/fonts";
+
+:root {
+	--bg-global: #1c2431;
+	--bg-body: #293b4d;
+	--color: #e2e5e9;
+	--color-link: #1d99bc;
+	--error-color: #e34f4f;
+	--bg-button: #1c2431;
+	--bg-hover: #242f3d;
+}
+
+:root[data-theme="dark"] {
+	--bg-global: #1c2431;
+	--color-link: #1d99bc;
+	--bg-body: #2b3e51;
+	--error-color: #e34f4f;
+	--color: #e2e5e9;
+	--bg-button: #1c2431;
+	--bg-hover: #242f3d;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+:focus, :active {
+	outline: none;
+}
+
+a:focus, a:active {
+	outline: none;
+}
+
+nav, footer, header, aside {
+	display: block;
+}
+
+html, body {
+	width: 100%;
+	line-height: 1;
+	font-size: 16px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Outfit', sans-serif;
+	background-color: var(--bg-global);
+	color: var(--color);
+}
+
+input, button, textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: var(--color);
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+.container {
+	//position: relative;
+	max-width: 1100px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+button:disabled {
+	background-color: #b2b2b2;
+	cursor: not-allowed;
+}
+
+
+
+.authError {
+	text-align: center;
+	color: var(--error-color);
+	margin-bottom: 10px;
+}

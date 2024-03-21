@@ -1,0 +1,35 @@
+@import "../../../../assets/styles/variables";
+.messageRoom {
+	@include component();
+	border: 1px solid #46596c;
+	padding: 0;
+}
+
+.roomHeader {
+	position: sticky;
+	background-color: var(--bg-body);
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	z-index: 100;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #46596c;
+	height: 70px;
+	padding: 10px;
+}
+.prev {
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.messages {
+	padding-top: 10px;
+	position: relative;
+	left: 0;
+	right: 0;
+	height: 70vh;
+	overflow-y: auto;
+	padding-bottom: 30px;
+}
